@@ -14,7 +14,7 @@ namespace NGPlugins
     {
         public override string Author => "Frontalvlad";
 
-        public override string Description => "Просмотр плагинов. Специально для NGVille (host.frontalvlad.ml)";
+        public override string Description => "Plugin specifically for NGVille server. Shows a list of plugins.";
 
         public override string Name => "NGPlugins";
 
