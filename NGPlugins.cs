@@ -12,13 +12,10 @@ namespace NGPlugins
     [ApiVersion(2, 1)]
     public class NGPlugins : TerrariaPlugin
     {
-        public override string Author => "Frontalvlad";
-
-        public override string Description => "Plugin specifically for NGVille server. Shows a list of plugins.";
-
-        public override string Name => "NGPlugins";
-
-        public override Version Version => new Version(1, 0, 0, 0);
+        public override string Name { get { return "NGPlugins"; } }
+        public override string Author { get { return "Frontalvlad"; } }
+        public override string Description { get { return "Plugin specifically for NGVille server. Shows a list of plugins."; } }
+        public override Version Version { get { return Assembly.GetExecutingAssembly().GetName().Version; } }
 
         public NGPlugins(Main game)
           : base(game)
