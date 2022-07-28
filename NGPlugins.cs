@@ -22,9 +22,8 @@ namespace NGPlugins
         {
         }
 
-        public override void Initialize() => Commands.ChatCommands.Add(new Command("ngplugins.listplugins", new CommandDelegate(this.ListPluginsCommand), new string[3]
+        public override void Initialize() => Commands.ChatCommands.Add(new Command("ngplugins", new CommandDelegate(this.ListPluginsCommand), new string[2]
         {
-      "ngplugin",
       "ngplugins",
       "plugins"
         }));
